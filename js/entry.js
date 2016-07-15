@@ -424,7 +424,18 @@ $(document).ready(function(){
   }
 ];
 
+        var source = $("#searchResultsTemplate").html();
+        var template = Handlebars.compile(source);
+        var html = template(data);
+        var container = $("#resultsContainer");
         
+        container.empty().html(html);
+
+        container.find(".content").hide();
+
+        container.find(".content:eq(2)").show();
+
+
     }
 
     function autocomplete(fn){

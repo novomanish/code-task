@@ -1,0 +1,19 @@
+{
+  "name": "code-task",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/novomanish/code-task.git"
+  },
+  "author": "novomanish@gmail.com",
+  "license": "BSD",
+  "gitHead": "266b04edd79a81eedc813966a05b12e51901cc4b",
+  "bugs": {
+    "url": "https://github.com/novomanish/code-task/issues"
+  }
+}

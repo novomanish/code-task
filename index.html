@@ -1,6 +1,9 @@
 <html>
     <head>
     <title>Fligh Search Interface</title>
+
+        <link href="css/css.css" rel="stylesheet"></link>
+
         <script src="js/jquery-3.0.0.js" type="text/javascript"></script>
         <script src="js/handlebars-v4.0.5.js" type="text/javascript"></script>
         <script src="js/entry.js" type="text/javascript"></script>
@@ -16,18 +19,27 @@
 <div id="airportResulsContainer">
 </div>
 
-<div id="resultContainer">
+<div id="resultsContainer">
+</div>
+
+<script id="searchResultsTemplate" type="text/x-handlebars-template">
+<div class="tab">
     <ul>
         <li>Tab header 1</li>
         <li>Tab header 2</li>
-        <li>Tab header 3</li>
+        <li class="selected">Tab header 3</li>
         <li>Tab header 4</li>
         <li>Tab header 5</li>
     </ul>
-    <div>Tab Body 1</div>
+    <div class="content">Tab Body 1</div>
+    <div class="content">Tab Body 2</div>
+    <div class="content">Tab Body 3</div>
+    <div class="content">Tab Body 4</div>
+    <div class="content">Tab Body 5</div>
 </div>
+</script>
 
-<script id="airportLineTemplate" type="text/x-template">
+<script id="airportLineTemplate" type="text/x-handlebars-template">
     <ul>
         {{#each .}}
         <li data-code="{{airportCode}}">{{airportName}}, {{countryName}}</li>
